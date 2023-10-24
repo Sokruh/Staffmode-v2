@@ -2,3 +2,20 @@ name: Staffmode-v2
 version: '${project.version}'
 main: net.staffmodev2.Staffmode_v2
 api-version: '1.20'
+commands:
+  sm:
+    aliases: staffmode
+    description: staffmode
+    permission: Staff.staffmode
+  freeze:
+    description: freeze
+    permission: Staff.freeze
+permissions:
+  Staff.freeze:
+    description: freeze
+    default: op
+  Staff.staffmode:
+    default: op
+    description: staffmode
+    children:
+      Staff.freeze: true
