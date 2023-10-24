@@ -1,0 +1,4 @@
+name: Staffmode-v2
+version: '${project.version}'
+main: net.staffmodev2.Staffmode_v2
+api-version: '1.20'
